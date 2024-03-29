@@ -1,0 +1,78 @@
+.create-loan-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+    background-color: #747264;
+    padding:1rem;
+    width:70%;
+    height:50vh;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.create-loan-wrapper .loan-inputs{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+    width:50%;
+}
+
+.scheduled-loans{
+    width:50%;
+    overflow-y: scroll;
+}
+
+.scheduled-loans::-webkit-scrollbar {
+    display: none; 
+}
+
+.scheduled-loans h2{
+    text-align: center;
+    margin:0;
+    padding:0;
+    color:white;
+}
+
+.create-loan-wrapper .loan-inputs input{
+    padding:1rem;
+    outline:none;
+    border-radius: 10px;
+    font-family: 'Mukta';
+    border:none;
+    font-size: 1rem;
+}
+
+.create-loan-wrapper button{
+    font-family: 'Mukta';
+    font-size: 1rem;
+    background-color: #57554a;
+    padding: .7rem;
+    border: 1px solid rgb(134, 134, 134);
+    margin-top: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.scheduled-loans div{
+    padding:.5rem;
+    border-radius: 10px;
+    border:1px solid rgb(158, 158, 158);
+    margin-bottom: .5rem;
+    color:white;
+}
+
+@media screen and (max-width:768px){
+    .create-loan-wrapper{
+        display: flex;
+        flex-direction: column;
+        height:100%;
+        width:90%;
+        gap:3rem;
+    }
+
+    .create-loan-wrapper .loan-inputs, .create-loan-wrapper .scheduled-loans{
+        width:100%;
+    }
+}

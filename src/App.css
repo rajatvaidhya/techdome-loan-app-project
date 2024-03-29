@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: "Mukta", sans-serif;
+    color:black;
+    background-color: #EEEDEB;
+}
+
+h1, p, span{
+    margin: 0;
+    padding:0;
+}
+
+.navbar{
+    background-color: #E0CCBE;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem .5rem 2rem;
+}
+
+.site-logo{
+    width:10rem;
+}
+
+.site-logo img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+}
+
+.navbar div:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+
+.navbar div p{
+    background-color: #747264;
+    color:white;
+    padding:.4rem 2rem .4rem 2rem;
+    width:3rem;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar div p:hover{
+    background-color: #8d8b79;
+}
+
+.main-home-container{
+    text-align: center;
+    width:70%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.main-home-container button{
+    background-color: #747264;
+    padding:.7rem 3rem .7rem 3rem;
+    outline:none;
+    border:none;
+    font-family: 'Mukta';
+    border-radius: 10px;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color:white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.main-home-container button:hover{
+    background-color: #8d8a75;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    border-top: 1px solid gray;
+    width:100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.menu-dots, .menu-items{
+    display: none;
+}
+
+
+@media screen and (max-width:768px){
+
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+
+    .main-home-container{
+        width:95%;
+    }
+
+    .navbar div p{
+        display: none;
+    }
+
+    .site-logo{
+        margin-left: -1rem;
+        padding-top: .5rem;
+    }
+
+    .menu-dots, .menu-items{
+        display: block;
+    }
+
+    .fa-ellipsis-v{
+        font-size: 1.3rem;
+    }
+
+    .menu-items{
+        position: absolute;
+        background-color: #E0CCBE;
+        width:100%;
+        border-bottom: 1px solid rgb(170, 170, 170);
+        /* box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */
+    }
+
+    .menu-items ul{
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap:3rem;
+        margin:0;
+        padding:0;
+    }
+
+    .menu-items ul li{
+        background-color: #747264;
+        color:white;
+        padding:.5rem 3rem .5rem 3rem;
+        margin:.5rem;
+        border-radius: 10px;
+    }
+}
