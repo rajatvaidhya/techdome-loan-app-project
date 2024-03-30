@@ -1,70 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Loanplus+ : Your Mini Loan App!
 
-## Available Scripts
+Welcome to the Loanplus+, your one-stop solution for applying for loans and managing them seamlessly. Built on the MERN (MongoDB, Express.js, React.js, Node.js) stack, our web application offers a user-friendly interface and powerful features to streamline the loan application process and ensure efficient management
 
-In the project directory, you can run:
 
-### `npm start`
+This web app's frontend is hosted on vercel and backend is hosted on render. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Check backend folder here : https://github.com/rajatvaidhya/loan-app-backend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Client:** React.js, HTML, CSS, JavaScript
 
-### `npm run build`
+**Server:** Node.js, Express.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Database:** MongoDB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+Clone frontend repo through:
+```bash
+git clone https://github.com/rajatvaidhya/techdome-loan-app-project
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clone backend repo through:
+```bash
+git clone https://github.com/rajatvaidhya/loan-app-backend
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install dependencies in frontend folder:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+  cd .\techdome-loan-app-project\
+  npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install dependencies in backend folder:
 
-## Learn More
+```bash
+  cd .\loan-app-backend\
+  npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Start the frontend through following commands:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  cd .\techdome-loan-app-project\
+  npm start
+```
 
-### Code Splitting
+Start the backend through following commands:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  cd .\loan-app-backend\
+  node index.js
+```
+## Required changes in both folders
 
-### Analyzing the Bundle Size
+1. Change all API requests in frontend folder to `http://localhost:5000` format as our backend is running on 5000 port locally.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Introduce your own .env data in the backend folder for `process.env.MONGOURI` & `process.env.JWT_SECRET`
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Color Reference
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Body Color | ![#EEEDEB](https://via.placeholder.com/10/EEEDEBf?text=+) #EEEDEB |
+| Buttons and Containers Color | ![#747264](https://via.placeholder.com/10/747264?text=+) #747264 |
+| Navbar BG Color | ![##e0ccbe](https://via.placeholder.com/10/#e0ccbe?text=+) ##e0ccbe |
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Typography
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`font-family:'Mukta', sans-serif`

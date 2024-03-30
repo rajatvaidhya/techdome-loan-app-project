@@ -34,7 +34,7 @@ const RequestCard = (props) => {
       <div>
         <p>Name : {props.name}</p>
         <p>Email : {props.email}</p>
-        <p>Amount : ${props.amount}</p>
+        <p>Amount : ₹{props.amount}</p>
         <p>Term : {props.term} weeks</p>
       </div>
 

@@ -7,7 +7,7 @@ const UserLoanCard = (props) => {
   return (
     <div className="request-card-container">
       <div>
-        <p>Amount : ${props.amount}</p>
+        <p>Amount : ₹{props.amount}</p>
         <p>Term : {props.term} weeks</p>
       </div>
 
